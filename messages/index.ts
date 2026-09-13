@@ -1,0 +1,18 @@
+import ptAuth from './pt-BR/auth.json';
+import enAuth from './en-US/auth.json';
+import esAuth from './es-ES/auth.json';
+import l0common from './pt-BR/common.json';
+import l0dashboard from './pt-BR/dashboard.json';
+import l0marketing from './pt-BR/marketing.json';
+import l0settings from './pt-BR/settings.json';
+import l1common from './en-US/common.json';
+import l1dashboard from './en-US/dashboard.json';
+import l1marketing from './en-US/marketing.json';
+import l1settings from './en-US/settings.json';
+import l2common from './es-ES/common.json';
+import l2dashboard from './es-ES/dashboard.json';
+import l2marketing from './es-ES/marketing.json';
+import l2settings from './es-ES/settings.json';
+export type Locale='pt-BR'|'en-US'|'es-ES';
+export const messages={'pt-BR':{...ptAuth,...l0common,...l0dashboard,...l0marketing,...l0settings},'en-US':{...enAuth,...l1common,...l1dashboard,...l1marketing,...l1settings},'es-ES':{...esAuth,...l2common,...l2dashboard,...l2marketing,...l2settings}};
+export type MessageKey=keyof typeof messages['pt-BR'];

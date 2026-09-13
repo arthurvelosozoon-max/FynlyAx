@@ -1,0 +1,774 @@
+Claro. Acrescente este bloco ao prompt mestre da **FynlyAx**:
+
+# 71. MULTI-IDIOMA / INTERNACIONALIZAÇÃO
+
+A FynlyAx deve nascer preparada para utilização internacional.
+
+Implementar sistema completo de internacionalização utilizando arquitetura adequada para Next.js.
+
+Idiomas iniciais:
+
+- Português do Brasil — pt-BR
+- Inglês — en-US
+- Espanhol — es-ES
+
+Preparar arquitetura para futuramente adicionar:
+
+- Francês
+- Italiano
+- Alemão
+- Português de Portugal
+
+Todo o conteúdo da interface deve utilizar arquivos de tradução.
+
+Não deixar textos hardcoded diretamente nos componentes.
+
+Traduzir:
+
+- menus;
+- botões;
+- títulos;
+- dashboards;
+- formulários;
+- mensagens de erro;
+- notificações;
+- onboarding;
+- relatórios;
+- configurações;
+- e-mails;
+- autenticação;
+- insights financeiros;
+- páginas públicas;
+- landing page.
+
+O usuário deverá conseguir alterar o idioma a qualquer momento através das configurações do perfil.
+
+Salvar a preferência individual do usuário no banco de dados.
+
+---
+
+# 72. LOCALIZAÇÃO FINANCEIRA
+
+Além do idioma, adaptar a plataforma para diferentes regiões.
+
+Criar configuração de:
+
+- país;
+- idioma;
+- moeda;
+- símbolo monetário;
+- formato de números;
+- formato de datas;
+- timezone;
+- separador decimal;
+- separador de milhares.
+
+Exemplo Brasil:
+
+R$ 10.500,00
+
+Exemplo Estados Unidos:
+
+$10,500.00
+
+Exemplo Europa:
+
+€10.500,00
+
+Moedas iniciais:
+
+- BRL
+- USD
+- EUR
+- GBP
+
+Preparar estrutura para adicionar outras moedas.
+
+O usuário poderá escolher sua moeda principal nas configurações.
+
+---
+
+# 73. PERFIL COMPLETAMENTE CONFIGURÁVEL
+
+Criar área:
+
+/settings/profile
+
+O perfil deve ser totalmente personalizável.
+
+Permitir alterar:
+
+- foto;
+- nome;
+- sobrenome;
+- e-mail;
+- telefone;
+- data de nascimento opcional;
+- país;
+- cidade opcional;
+- idioma;
+- moeda principal;
+- timezone;
+- formato de data.
+
+Criar avatar com:
+
+- upload de imagem;
+- recorte;
+- remoção;
+- iniciais automáticas quando não houver foto.
+
+---
+
+# 74. PREFERÊNCIAS DA PLATAFORMA
+
+Criar página:
+
+/settings/preferences
+
+Permitir configurar:
+
+- idioma;
+- moeda;
+- timezone;
+- início da semana;
+- formato de data;
+- casas decimais;
+- notificações;
+- comportamento do dashboard;
+- primeira página após login.
+
+Exemplo:
+
+Página inicial:
+- Dashboard;
+- Transações;
+- Planejamento;
+- Investimentos.
+
+---
+
+# 75. LIGHT MODE E DARK MODE
+
+A FynlyAx deve possuir:
+
+- Dark Mode;
+- Light Mode;
+- modo automático baseado no sistema operacional.
+
+Configuração:
+
+Tema:
+
+- Claro
+- Escuro
+- Usar tema do sistema
+
+Salvar preferência no perfil.
+
+Evitar flash de tema ao carregar a aplicação.
+
+---
+
+# 76. DARK MODE PREMIUM
+
+O Dark Mode será a identidade visual principal da FynlyAx.
+
+Utilizar:
+
+Background:
+#0D0B14
+
+Surface:
+#181421
+
+Cards:
+#1E1928
+
+Border:
+#302A3D
+
+Texto principal:
+#F8F7FC
+
+Texto secundário:
+#A9A3B5
+
+Roxo principal:
+#7C3AED
+
+Violeta:
+#8B5CF6
+
+Lilás:
+#A78BFA
+
+O dark mode deve ter aparência sofisticada, moderna e premium.
+
+Evitar preto absoluto em todas as áreas.
+
+---
+
+# 77. LIGHT MODE PREMIUM
+
+Criar também uma versão clara elegante.
+
+Sugestão:
+
+Background:
+#F7F7FB
+
+Surface:
+#FFFFFF
+
+Cards:
+#FFFFFF
+
+Border:
+#E8E5EF
+
+Texto principal:
+#17131F
+
+Texto secundário:
+#6F687A
+
+Roxo principal:
+#7C3AED
+
+Violeta:
+#8B5CF6
+
+Lilás:
+#A78BFA
+
+Não criar simplesmente uma inversão de cores.
+
+O Light Mode deve possuir design próprio, excelente contraste e sensação premium.
+
+---
+
+# 78. TEMA PERSONALIZÁVEL
+
+Criar uma seção:
+
+/settings/appearance
+
+Permitir escolher:
+
+Tema:
+
+- Light
+- Dark
+- System
+
+Cor de destaque:
+
+- FynlyAx Purple
+- Violet
+- Blue
+- Emerald
+- Rose
+- Orange
+
+A identidade padrão deverá continuar sendo roxa.
+
+As outras opções devem alterar somente elementos de destaque como:
+
+- botões;
+- indicadores;
+- links;
+- progress bars;
+- seleção;
+- gráficos.
+
+Nunca comprometer legibilidade ou identidade da marca.
+
+---
+
+# 79. PERSONALIZAÇÃO DO DASHBOARD
+
+Criar funcionalidade para o usuário personalizar seu dashboard.
+
+Permitir:
+
+- reorganizar cards;
+- ocultar cards;
+- mostrar cards;
+- escolher métricas;
+- escolher tamanho dos widgets;
+- redefinir layout.
+
+Exemplo de widgets:
+
+- patrimônio líquido;
+- saldo;
+- receitas;
+- despesas;
+- economia;
+- investimentos;
+- dívidas;
+- cartões;
+- metas;
+- forecast;
+- FynlyAx Score.
+
+Usar drag and drop se fizer sentido.
+
+Salvar configuração por usuário.
+
+---
+
+# 80. HOME PERSONALIZADA
+
+Permitir escolher quais informações aparecem primeiro.
+
+Exemplo:
+
+Usuário focado em investimentos:
+
+Investimentos
+→ Patrimônio
+→ Rentabilidade
+→ Metas
+→ Despesas.
+
+Usuário focado em sair das dívidas:
+
+Dívidas
+→ Parcelas
+→ Debt Planner
+→ Orçamento
+→ Forecast.
+
+A plataforma deve se adaptar ao objetivo financeiro do usuário.
+
+---
+
+# 81. CONFIGURAÇÕES DE PRIVACIDADE
+
+Criar página:
+
+/settings/privacy
+
+Permitir:
+
+- esconder valores monetários;
+- esconder patrimônio;
+- esconder saldo;
+- modo privacidade;
+- solicitar autenticação para visualizar valores sensíveis.
+
+Criar botão rápido:
+
+“Ocultar valores”
+
+Representar valores como:
+
+R$ ••••••
+
+Útil quando o usuário estiver utilizando a plataforma em público.
+
+---
+
+# 82. CONFIGURAÇÕES DE NOTIFICAÇÕES
+
+Criar página:
+
+/settings/notifications
+
+Permitir controlar individualmente:
+
+E-mail:
+- vencimentos;
+- cartão;
+- orçamento;
+- metas;
+- insights;
+- relatórios;
+- segurança.
+
+Push:
+- vencimentos;
+- metas;
+- orçamento;
+- transações importantes.
+
+Dentro da plataforma:
+- alertas;
+- insights;
+- atualizações.
+
+---
+
+# 83. SEGURANÇA DO PERFIL
+
+Criar página:
+
+/settings/security
+
+Permitir:
+
+- alterar senha;
+- redefinir senha;
+- visualizar sessões;
+- encerrar sessões;
+- logout em todos os dispositivos.
+
+Preparar para:
+
+- autenticação de dois fatores;
+- passkeys;
+- biometria em aplicativo futuro.
+
+Mostrar:
+
+“Último acesso”
+
+“Dispositivos conectados”
+
+---
+
+# 84. PREFERÊNCIAS DE E-MAIL
+
+Usuário pode escolher receber:
+
+- resumo semanal;
+- resumo mensal;
+- alerta de orçamento;
+- alerta de cartão;
+- vencimentos;
+- relatório financeiro;
+- novidades da plataforma.
+
+Não enviar comunicações desnecessárias.
+
+---
+
+# 85. CONFIGURAÇÕES DE INÍCIO FINANCEIRO
+
+Permitir definir:
+
+Dia de início do mês financeiro.
+
+Por padrão:
+
+dia 1.
+
+Mas permitir exemplo:
+
+“Meu mês financeiro começa todo dia 25.”
+
+Isso é importante para usuários que recebem salário em datas diferentes.
+
+Dashboards e relatórios devem respeitar essa configuração.
+
+---
+
+# 86. CONFIGURAÇÕES DE ARREDONDAMENTO
+
+Permitir escolher:
+
+- 2 casas decimais;
+- sem centavos;
+- valores compactos.
+
+Exemplo:
+
+R$10.450
+
+ou:
+
+R$10,4 mil.
+
+---
+
+# 87. ACESSIBILIDADE VISUAL
+
+Nas configurações permitir:
+
+- aumentar fonte;
+- reduzir animações;
+- alto contraste;
+- modo de baixa distração.
+
+Respeitar:
+
+prefers-reduced-motion.
+
+---
+
+# 88. ONBOARDING REGIONAL
+
+Durante o onboarding perguntar:
+
+“Em qual país você está?”
+
+“Qual moeda utiliza?”
+
+“Qual idioma prefere?”
+
+Detectar idioma do navegador como sugestão, mas nunca alterar permanentemente sem confirmação do usuário.
+
+---
+
+# 89. CONFIGURAÇÕES POR DISPOSITIVO
+
+Preferências importantes devem ser sincronizadas pela conta.
+
+Exemplo:
+
+- idioma;
+- moeda;
+- layout;
+- tema.
+
+Algumas configurações podem permanecer locais:
+
+- sidebar aberta/fechada;
+- zoom;
+- último filtro utilizado.
+
+---
+
+# 90. CENTRAL DE CONFIGURAÇÕES
+
+Criar uma área organizada e premium.
+
+Menu:
+
+Minha conta
+
+- Perfil
+- Segurança
+
+Preferências
+
+- Aparência
+- Idioma e Região
+- Dashboard
+- Notificações
+- Privacidade
+
+Financeiro
+
+- Moeda
+- Categorias
+- Contas
+- Regras
+- Mês financeiro
+
+Workspace
+
+- Família
+- Membros
+- Permissões
+
+Plano
+
+- Assinatura
+- Faturamento
+
+Dados
+
+- Importar
+- Exportar
+- Backup
+- Excluir conta
+
+---
+
+# 91. CONFIGURAÇÕES COM BUSCA
+
+Criar busca dentro das configurações.
+
+Exemplo:
+
+Pesquisar:
+
+“senha”
+
+Mostrar:
+
+Segurança → Alterar senha.
+
+Pesquisar:
+
+“idioma”
+
+Mostrar:
+
+Idioma e Região.
+
+---
+
+# 92. PERFIL FINANCEIRO DO USUÁRIO
+
+Criar um perfil financeiro separado do perfil pessoal.
+
+Exemplo:
+
+Objetivo financeiro:
+
+- organizar finanças;
+- sair das dívidas;
+- criar reserva;
+- investir;
+- aumentar patrimônio.
+
+Perfil de risco opcional:
+
+- conservador;
+- moderado;
+- arrojado.
+
+Esse perfil poderá ser usado futuramente para personalizar insights.
+
+Nunca tratar perfil de risco como recomendação automática de investimento sem a devida estrutura regulatória.
+
+---
+
+# 93. PERSONALIZAÇÃO DE INSIGHTS
+
+Permitir escolher quais tipos de insights o usuário deseja receber:
+
+- economia;
+- despesas;
+- orçamento;
+- dívidas;
+- investimentos;
+- patrimônio;
+- metas.
+
+---
+
+# 94. PRIMEIRO ACESSO PERSONALIZADO
+
+Após onboarding, montar automaticamente um dashboard inicial baseado nas respostas do usuário.
+
+Exemplo:
+
+Usuário escolheu:
+
+“Sair das dívidas.”
+
+Dashboard inicial deve destacar:
+
+1. Dívida total
+2. Comprometimento mensal
+3. Debt Planner
+4. Forecast
+5. Orçamento
+6. Evolução da dívida.
+
+Usuário escolheu:
+
+“Aumentar patrimônio.”
+
+Destacar:
+
+1. Patrimônio
+2. Investimentos
+3. Taxa de economia
+4. Metas
+5. Projeção futura.
+
+---
+
+# 95. ARQUITETURA DE INTERNACIONALIZAÇÃO
+
+Implementar de forma estruturada.
+
+Exemplo:
+
+/messages
+  /pt-BR.json
+  /en-US.json
+  /es-ES.json
+
+Organizar traduções por módulo:
+
+common
+auth
+dashboard
+transactions
+investments
+debts
+goals
+settings
+reports.
+
+Evitar um único arquivo gigante.
+
+---
+
+# 96. FORMATAÇÃO CENTRALIZADA
+
+Criar funções reutilizáveis:
+
+formatCurrency()
+
+formatDate()
+
+formatPercentage()
+
+formatNumber()
+
+formatCompactNumber()
+
+Essas funções devem respeitar automaticamente:
+
+- locale;
+- moeda;
+- timezone;
+- preferências.
+
+Não formatar valores manualmente nos componentes.
+
+---
+
+# 97. DESIGN TOKENS
+
+Criar Design Tokens para evitar cores hardcoded.
+
+Exemplo:
+
+--background
+--surface
+--card
+--border
+--foreground
+--muted
+--primary
+--primary-hover
+--success
+--warning
+--danger.
+
+Light e Dark Mode devem trocar tokens automaticamente.
+
+---
+
+# 98. EXPERIENCE PRINCIPLE
+
+As configurações não devem parecer uma área secundária da plataforma.
+
+Devem possuir a mesma qualidade visual do dashboard principal.
+
+O usuário deve sentir que consegue adaptar a FynlyAx ao seu estilo de vida.
+
+A plataforma deve ser:
+
+Personalizável.
+
+Internacional.
+
+Responsiva.
+
+Acessível.
+
+Premium.
+
+O objetivo é permitir que duas pessoas utilizem a FynlyAx de formas completamente diferentes sem comprometer a identidade principal do produto.
+
+Essas alterações deixam a **FynlyAx preparada para virar um SaaS internacional**, e não apenas um sistema brasileiro. O ponto que considero mais importante é o dashboard configurável: cada usuário pode transformar a plataforma conforme o objetivo financeiro dele, o que também cria um diferencial real em relação a controles financeiros mais engessados.

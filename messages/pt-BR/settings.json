@@ -1,0 +1,19 @@
+{
+  "settings": "Configurações",
+  "currencyNote": "Contas da demonstração em BRL. A preferência não converte nem renomeia seus saldos.",
+  "language": "Idioma",
+  "theme": "Tema",
+  "dark": "Escuro",
+  "light": "Claro",
+  "system": "Sistema",
+  "accent": "Cor de destaque",
+  "privacy": "Ocultar valores",
+  "profile": "Perfil",
+  "firstName": "Nome",
+  "lastName": "Sobrenome",
+  "region": "Idioma e região",
+  "appearance": "Aparência",
+  "preferences": "Preferências",
+  "timezone": "Fuso horário",
+  "financialDay": "Início do mês financeiro"
+}

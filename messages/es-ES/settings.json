@@ -1,0 +1,19 @@
+{
+  "settings": "Configuración",
+  "currencyNote": "Las cuentas demo usan BRL. Esta preferencia no convierte ni cambia la moneda de los saldos.",
+  "language": "Idioma",
+  "theme": "Tema",
+  "dark": "Oscuro",
+  "light": "Claro",
+  "system": "Sistema",
+  "accent": "Color de acento",
+  "privacy": "Ocultar importes",
+  "profile": "Perfil",
+  "firstName": "Nombre",
+  "lastName": "Apellido",
+  "region": "Idioma y región",
+  "appearance": "Apariencia",
+  "preferences": "Preferencias",
+  "timezone": "Zona horaria",
+  "financialDay": "Inicio del mes financiero"
+}

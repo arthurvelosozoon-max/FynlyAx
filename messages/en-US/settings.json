@@ -1,0 +1,19 @@
+{
+  "settings": "Settings",
+  "currencyNote": "Demo accounts use BRL. This preference does not convert or relabel your balances.",
+  "language": "Language",
+  "theme": "Theme",
+  "dark": "Dark",
+  "light": "Light",
+  "system": "System",
+  "accent": "Accent color",
+  "privacy": "Hide amounts",
+  "profile": "Profile",
+  "firstName": "First name",
+  "lastName": "Last name",
+  "region": "Language and region",
+  "appearance": "Appearance",
+  "preferences": "Preferences",
+  "timezone": "Time zone",
+  "financialDay": "Financial month start"
+}

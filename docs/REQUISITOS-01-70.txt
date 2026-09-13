@@ -1,0 +1,1852 @@
+Vou montar isso como um **prompt mestre para o Codex**, já pensando em uma plataforma SaaS premium, com arquitetura escalável, visual alinhado à identidade roxa da FynlyAx e recursos que possam diferenciar o produto no mercado.
+
+Você é um engenheiro de software sênior, arquiteto de sistemas, especialista em SaaS, fintech, UX/UI, segurança, banco de dados, dashboards financeiros e produtos digitais premium.
+
+Sua missão é projetar e desenvolver uma plataforma chamada:
+
+# FynlyAx
+
+Uma plataforma SaaS premium para:
+
+- controle financeiro pessoal;
+- controle de receitas e despesas;
+- organização de contas bancárias;
+- cartões de crédito;
+- investimentos;
+- patrimônio;
+- dívidas;
+- empréstimos;
+- financiamentos;
+- metas financeiras;
+- planejamento mensal;
+- orçamento;
+- controle familiar;
+- projeção financeira;
+- inteligência financeira;
+- relatórios;
+- indicadores;
+- acompanhamento da evolução patrimonial.
+
+A plataforma deve ter qualidade visual, experiência de uso e profundidade comparáveis às melhores plataformas financeiras premium do mercado, mas NÃO deve copiar nenhuma interface existente.
+
+Crie uma identidade própria para a FynlyAx.
+
+O produto deve parecer uma fintech moderna, sofisticada, segura e tecnológica.
+
+---
+
+# 1. OBJETIVO DO PRODUTO
+
+Criar uma plataforma que permita que o usuário tenha uma visão completa da sua vida financeira.
+
+O usuário deve conseguir visualizar rapidamente:
+
+- quanto possui;
+- quanto deve;
+- quanto recebe;
+- quanto gasta;
+- quanto investe;
+- onde está gastando mais;
+- evolução financeira;
+- patrimônio líquido;
+- saldo disponível;
+- previsão de fechamento do mês;
+- evolução anual;
+- metas;
+- orçamento;
+- investimentos;
+- dívidas;
+- vencimentos;
+- saúde financeira.
+
+A plataforma deve responder de forma visual à pergunta:
+
+“Como está minha vida financeira hoje, como cheguei até aqui e para onde estou indo?”
+
+---
+
+# 2. MODELO DE NEGÓCIO
+
+A FynlyAx será uma plataforma SaaS por assinatura.
+
+Criar estrutura preparada para planos:
+
+## Plano Free
+
+Permitir:
+
+- 1 usuário;
+- número limitado de contas;
+- número limitado de cartões;
+- lançamentos;
+- dashboard básico;
+- categorias;
+- metas básicas.
+
+## Plano Premium
+
+Permitir:
+
+- contas ilimitadas;
+- cartões ilimitados;
+- investimentos;
+- patrimônio;
+- dívidas;
+- planejamento avançado;
+- projeções;
+- relatórios;
+- exportação;
+- dashboards completos;
+- inteligência financeira;
+- metas avançadas;
+- controle familiar.
+
+## Plano Family
+
+Permitir:
+
+- múltiplos usuários;
+- perfis financeiros;
+- compartilhamento familiar;
+- despesas compartilhadas;
+- metas familiares;
+- permissões;
+- dashboard consolidado.
+
+Criar estrutura preparada para futuramente integrar pagamentos recorrentes usando Stripe, Mercado Pago ou outra plataforma.
+
+---
+
+# 3. TECNOLOGIAS
+
+Utilizar preferencialmente:
+
+Frontend:
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+
+Backend:
+- Next.js Server Actions/API Routes ou arquitetura modular adequada.
+
+Banco:
+- PostgreSQL
+
+Backend/Auth:
+- Supabase preferencialmente.
+
+ORM:
+- Prisma, se fizer sentido para a arquitetura.
+
+Autenticação:
+- Supabase Auth.
+
+E-mails:
+- Resend ou serviço equivalente.
+
+Gráficos:
+- Recharts ou biblioteca moderna equivalente.
+
+Ícones:
+- Lucide Icons.
+
+Deploy:
+- Vercel.
+
+Banco:
+- Supabase PostgreSQL.
+
+Criar uma arquitetura organizada, modular, escalável e preparada para crescimento.
+
+---
+
+# 4. IDENTIDADE VISUAL
+
+A identidade da FynlyAx deve ser premium.
+
+Paleta principal:
+
+Roxo principal:
+#7C3AED
+
+Violeta:
+#8B5CF6
+
+Lilás:
+#A78BFA
+
+Background principal:
+#0D0B14
+
+Background secundário:
+#181421
+
+Bordas:
+#302A3D
+
+Texto principal:
+#F8F7FC
+
+Texto secundário:
+#A9A3B5
+
+Positivo:
+#22C55E
+
+Negativo:
+#EF4444
+
+Alerta:
+#F59E0B
+
+Informação:
+#3B82F6
+
+Criar gradiente principal:
+
+#6D28D9 → #8B5CF6 → #A78BFA
+
+---
+
+# 5. DESIGN SYSTEM
+
+Criar Design System completo.
+
+Utilizar:
+
+- cards sofisticados;
+- bordas discretas;
+- blur leve;
+- sombras suaves;
+- glassmorphism extremamente sutil;
+- fundos escuros;
+- gradientes controlados;
+- excelente hierarquia visual;
+- cantos entre 12px e 20px;
+- excelente espaçamento;
+- animações leves;
+- transições suaves;
+- skeleton loading;
+- estados hover;
+- estados ativos;
+- tooltips;
+- modais;
+- drawers;
+- dropdowns;
+- command palette.
+
+Evitar aparência genérica de dashboard criado por IA.
+
+O produto deve parecer desenvolvido por uma fintech premium.
+
+---
+
+# 6. RESPONSIVIDADE
+
+Criar interface:
+
+- Desktop;
+- Notebook;
+- Tablet;
+- Mobile.
+
+No desktop usar sidebar.
+
+No mobile utilizar:
+
+- navegação inferior;
+- menu compacto;
+- componentes adaptados;
+- cards empilhados;
+- gráficos responsivos.
+
+---
+
+# 7. LANDING PAGE
+
+Criar página pública premium para venda da plataforma.
+
+Seções:
+
+- Hero;
+- benefícios;
+- visão geral;
+- dashboard em mockup;
+- controle financeiro;
+- investimentos;
+- metas;
+- dívidas;
+- projeções;
+- inteligência financeira;
+- funcionalidades;
+- diferenciais;
+- planos;
+- perguntas frequentes;
+- CTA;
+- footer.
+
+Hero:
+
+“Tenha clareza sobre cada real da sua vida financeira.”
+
+Subheadline:
+
+“Controle seus gastos, investimentos, metas, patrimônio e dívidas em um único lugar.”
+
+CTA:
+
+“Começar gratuitamente”
+
+CTA secundário:
+
+“Conhecer a FynlyAx”
+
+---
+
+# 8. AUTENTICAÇÃO
+
+Criar fluxo completo.
+
+Páginas:
+
+/login
+
+/register
+
+/forgot-password
+
+/reset-password
+
+/verify-email
+
+Criar:
+
+- cadastro;
+- login;
+- logout;
+- recuperação de senha;
+- redefinição de senha;
+- confirmação de e-mail;
+- sessão persistente;
+- proteção de rotas;
+- tratamento de erros;
+- mensagens amigáveis;
+- loaders;
+- validações.
+
+Campos cadastro:
+
+- nome;
+- sobrenome;
+- e-mail;
+- senha;
+- confirmação de senha.
+
+Opcional futuramente:
+
+- Google Login;
+- Apple Login.
+
+---
+
+# 9. ONBOARDING
+
+Ao entrar pela primeira vez criar um onboarding moderno.
+
+Perguntar:
+
+- objetivo principal;
+- renda mensal;
+- principais despesas;
+- saldo atual;
+- existência de dívidas;
+- existência de investimentos;
+- meta financeira;
+- quantidade de contas;
+- quantidade de cartões.
+
+Perguntar:
+
+“O que você quer melhorar primeiro?”
+
+Opções:
+
+- controlar gastos;
+- sair das dívidas;
+- economizar;
+- investir;
+- organizar minha vida financeira;
+- aumentar patrimônio.
+
+Usar respostas para personalizar dashboard.
+
+---
+
+# 10. DASHBOARD PRINCIPAL
+
+Criar um dashboard premium e altamente informativo.
+
+Topo:
+
+“Boa tarde, Arthur.”
+
+“Veja como está sua vida financeira.”
+
+Filtro:
+
+- mês;
+- trimestre;
+- semestre;
+- ano;
+- personalizado.
+
+Mostrar:
+
+## Patrimônio líquido
+
+Fórmula:
+
+ativos - passivos.
+
+Mostrar:
+
+- valor;
+- variação;
+- percentual;
+- gráfico histórico.
+
+## Saldo disponível
+
+Somatório das contas.
+
+## Receita mensal
+
+Valor total recebido.
+
+## Despesas
+
+Valor total gasto.
+
+## Investimentos
+
+Saldo total investido.
+
+## Dívidas
+
+Saldo devedor.
+
+## Economia do mês
+
+Receitas - despesas.
+
+## Taxa de economia
+
+Economia / receita.
+
+---
+
+# 11. GRÁFICO FINANCEIRO GERAL
+
+Criar gráfico principal com:
+
+- receitas;
+- despesas;
+- saldo;
+- investimentos.
+
+Exibir por:
+
+- dia;
+- semana;
+- mês;
+- ano.
+
+Permitir ativar e desativar séries.
+
+Tooltips detalhados.
+
+---
+
+# 12. DASHBOARD ANUAL
+
+Criar visão:
+
+“Seu ano financeiro”
+
+Mostrar janeiro a dezembro.
+
+Para cada mês:
+
+- receitas;
+- despesas;
+- economia;
+- investimentos;
+- dívidas pagas;
+- resultado.
+
+Criar gráfico anual.
+
+Criar heatmap financeiro.
+
+Exemplo:
+
+Janeiro
+Receitas: R$ 8.500
+Despesas: R$ 6.250
+Investimentos: R$ 1.000
+Resultado: R$ 1.250
+
+---
+
+# 13. CONTROLE DE RECEITAS
+
+Permitir cadastrar:
+
+- salário;
+- comissão;
+- freelance;
+- aluguel;
+- dividendos;
+- vendas;
+- renda extra;
+- outras receitas.
+
+Campos:
+
+- descrição;
+- valor;
+- categoria;
+- conta;
+- data;
+- recorrência;
+- observação;
+- comprovante.
+
+Permitir lançamentos:
+
+- únicos;
+- recorrentes;
+- parcelados.
+
+---
+
+# 14. DESPESAS
+
+Cadastrar:
+
+- moradia;
+- alimentação;
+- transporte;
+- lazer;
+- saúde;
+- educação;
+- assinatura;
+- compras;
+- filhos;
+- cartão;
+- impostos;
+- outras.
+
+Mostrar:
+
+- gasto total;
+- média mensal;
+- evolução;
+- comparação mês anterior.
+
+---
+
+# 15. CATEGORIAS
+
+Criar sistema de categorias personalizadas.
+
+Categoria possui:
+
+- nome;
+- cor;
+- ícone;
+- tipo;
+- limite mensal.
+
+Permitir subcategorias.
+
+Exemplo:
+
+Moradia
+→ aluguel
+→ energia
+→ água
+→ internet.
+
+---
+
+# 16. ORÇAMENTO
+
+Criar página:
+
+/budget
+
+Usuário define limite por categoria.
+
+Exemplo:
+
+Alimentação
+R$ 1.200 / R$ 1.500
+
+Barra de progresso:
+
+80%.
+
+Estados:
+
+verde:
+<70%
+
+amarelo:
+70%-90%
+
+vermelho:
+>90%.
+
+---
+
+# 17. CARTÕES
+
+Criar módulo completo.
+
+Cadastrar:
+
+- banco;
+- nome;
+- bandeira;
+- limite;
+- fechamento;
+- vencimento;
+- cor.
+
+Mostrar:
+
+- limite total;
+- disponível;
+- utilizado;
+- percentual;
+- próxima fatura;
+- compras;
+- parcelas.
+
+Criar página da fatura.
+
+---
+
+# 18. CONTROLE DE PARCELAS
+
+Permitir:
+
+Compra:
+
+Notebook
+
+R$ 4.800
+
+12x R$400.
+
+Sistema deve distribuir automaticamente parcelas nos próximos meses.
+
+Mostrar:
+
+3/12
+
+4/12
+
+5/12.
+
+---
+
+# 19. CONTAS
+
+Cadastrar:
+
+- conta corrente;
+- poupança;
+- conta digital;
+- carteira;
+- dinheiro.
+
+Campos:
+
+- instituição;
+- saldo inicial;
+- saldo atual;
+- cor;
+- ícone.
+
+---
+
+# 20. INVESTIMENTOS
+
+Criar módulo sofisticado.
+
+Categorias:
+
+- renda fixa;
+- CDB;
+- Tesouro;
+- ações;
+- FIIs;
+- ETFs;
+- criptomoedas;
+- fundos;
+- previdência;
+- outros.
+
+Campos:
+
+- ativo;
+- quantidade;
+- preço médio;
+- valor aplicado;
+- valor atual;
+- rentabilidade;
+- data;
+- instituição.
+
+Mostrar:
+
+## Patrimônio investido
+
+## Valor aplicado
+
+## Rentabilidade
+
+## Lucro/prejuízo
+
+## Distribuição da carteira
+
+Criar gráficos:
+
+- carteira por classe;
+- carteira por instituição;
+- evolução;
+- rentabilidade.
+
+---
+
+# 21. PATRIMÔNIO
+
+Criar módulo:
+
+“Meu Patrimônio”
+
+Registrar:
+
+- imóveis;
+- veículos;
+- empresas;
+- investimentos;
+- dinheiro;
+- bens;
+- outros.
+
+Mostrar patrimônio total.
+
+---
+
+# 22. DÍVIDAS
+
+Criar módulo completo para controle de dívidas.
+
+Cadastrar:
+
+- cartão;
+- empréstimo;
+- financiamento;
+- dívida pessoal;
+- financiamento veículo;
+- financiamento imóvel;
+- outras.
+
+Campos:
+
+- saldo;
+- taxa;
+- quantidade parcelas;
+- parcela;
+- vencimento;
+- banco;
+- início;
+- término.
+
+Mostrar:
+
+“Total de dívidas”
+
+“Valor mensal comprometido”
+
+“Prazo para quitar”
+
+---
+
+# 23. ESTRATÉGIA PARA QUITAR DÍVIDAS
+
+Criar funcionalidade diferenciada chamada:
+
+# FynlyAx Debt Planner
+
+Permitir escolher estratégia:
+
+- método bola de neve;
+- método avalanche;
+- personalizada.
+
+Mostrar:
+
+“Se pagar R$300 a mais por mês você quitará sua dívida 8 meses antes.”
+
+Mostrar economia estimada de juros.
+
+---
+
+# 24. METAS FINANCEIRAS
+
+Criar metas:
+
+- reserva de emergência;
+- viagem;
+- carro;
+- imóvel;
+- aposentadoria;
+- investimento;
+- quitar dívida;
+- personalizada.
+
+Campos:
+
+- nome;
+- valor;
+- valor atual;
+- prazo;
+- contribuição mensal.
+
+Mostrar progresso visual.
+
+---
+
+# 25. SIMULADOR DE METAS
+
+Usuário informa:
+
+Meta:
+R$50.000.
+
+Prazo:
+36 meses.
+
+Mostrar:
+
+“Você precisa guardar aproximadamente R$1.389/mês.”
+
+Permitir juros estimados.
+
+---
+
+# 26. CALENDÁRIO FINANCEIRO
+
+Criar calendário mostrando:
+
+- vencimentos;
+- receitas;
+- parcelas;
+- assinaturas;
+- cartões;
+- metas;
+- investimentos.
+
+Visualização:
+
+mensal.
+
+---
+
+# 27. ASSINATURAS
+
+Criar módulo:
+
+“Assinaturas”
+
+Exemplos:
+
+Netflix
+Spotify
+ChatGPT
+Academia
+Internet.
+
+Mostrar:
+
+“Você gasta R$547/mês com assinaturas.”
+
+Mostrar anual:
+
+R$6.564.
+
+---
+
+# 28. PREVISÃO DO MÊS
+
+Criar recurso chamado:
+
+# FynlyAx Forecast
+
+Sistema calcula:
+
+saldo atual
++
+receitas previstas
+-
+despesas previstas
+-
+faturas
+-
+parcelas.
+
+Mostrar:
+
+“Previsão de saldo no final do mês”
+
+Exemplo:
+
+R$ 3.842.
+
+---
+
+# 29. PREVISÃO ANUAL
+
+Criar projeção 12 meses.
+
+Mostrar:
+
+- patrimônio esperado;
+- caixa;
+- gastos;
+- investimentos;
+- dívidas;
+- metas.
+
+---
+
+# 30. FINANCIAL SCORE
+
+Criar um indicador exclusivo:
+
+# FynlyAx Score
+
+Escala:
+
+0 a 1000.
+
+Basear inicialmente em regras internas:
+
+- taxa de economia;
+- endividamento;
+- reserva;
+- orçamento;
+- investimentos;
+- pagamentos;
+- consistência financeira.
+
+Classificações:
+
+0-300
+Crítico
+
+301-500
+Atenção
+
+501-700
+Saudável
+
+701-850
+Muito bom
+
+851-1000
+Excelente.
+
+Não apresentar como score bancário ou de crédito.
+
+É apenas um indicador interno de saúde financeira.
+
+---
+
+# 31. FYNLYAX INSIGHTS
+
+Criar página:
+
+/insights
+
+Gerar insights automáticos.
+
+Exemplos:
+
+“Seus gastos com alimentação aumentaram 18%.”
+
+“Você economizou R$740 a mais que no mês passado.”
+
+“Sua maior categoria de gastos foi moradia.”
+
+“Você tem potencial para economizar R$420/mês.”
+
+“Seu patrimônio cresceu 4,8% nos últimos 6 meses.”
+
+“Você gastou R$680 em assinaturas nos últimos 30 dias.”
+
+---
+
+# 32. FYNLYAX MONEY MAP
+
+Criar mapa visual:
+
+Receita
+↓
+Contas
+↓
+Despesas
+↓
+Investimentos
+↓
+Metas
+
+Mostrar visualmente para onde o dinheiro está indo.
+
+---
+
+# 33. FYNLYAX FINANCIAL TIMELINE
+
+Criar timeline financeira.
+
+Mostrar:
+
+- salários;
+- gastos importantes;
+- investimentos;
+- metas atingidas;
+- novas dívidas;
+- dívidas quitadas;
+- evolução patrimonial.
+
+---
+
+# 34. FYNLYAX FUTURE
+
+Criar página diferenciada:
+
+“Seu futuro financeiro”
+
+Usuário escolhe horizonte:
+
+1 ano
+3 anos
+5 anos
+10 anos.
+
+Criar projeção baseada nos hábitos atuais.
+
+Exemplo:
+
+“Mantendo seu ritmo atual, seu patrimônio estimado em 5 anos será R$187.420.”
+
+Explicar claramente que se trata de estimativa e não de garantia.
+
+---
+
+# 35. FYNLYAX WHAT IF
+
+Criar simulador:
+
+“E se?”
+
+Exemplo:
+
+“E se eu investir R$500 a mais?”
+
+“E se reduzir alimentação em 15%?”
+
+“E se quitar essa dívida?”
+
+“E se minha renda aumentar R$1.000?”
+
+Mostrar impacto.
+
+---
+
+# 36. FYNLYAX FINANCIAL RADAR
+
+Criar gráfico radar com:
+
+- liquidez;
+- economia;
+- investimentos;
+- endividamento;
+- planejamento;
+- estabilidade.
+
+---
+
+# 37. RESUMO DO MÊS
+
+Criar relatório automático:
+
+# Seu mês em números
+
+Receita:
+R$8.900
+
+Despesas:
+R$6.430
+
+Economia:
+R$2.470
+
+Investimentos:
+R$1.500
+
+Patrimônio:
+R$62.800
+
+Mostrar comparação com mês anterior.
+
+---
+
+# 38. RELATÓRIOS
+
+Criar:
+
+- relatório mensal;
+- anual;
+- despesas;
+- receitas;
+- investimentos;
+- cartões;
+- patrimônio;
+- dívidas;
+- categorias.
+
+Permitir filtros.
+
+Preparar exportação:
+
+- CSV;
+- Excel;
+- PDF.
+
+---
+
+# 39. BUSCA GLOBAL
+
+Criar busca:
+
+CTRL + K.
+
+Pesquisar:
+
+- transações;
+- contas;
+- cartões;
+- investimentos;
+- metas;
+- páginas.
+
+---
+
+# 40. CENTRAL DE NOTIFICAÇÕES
+
+Mostrar:
+
+- conta vencendo;
+- cartão;
+- orçamento excedido;
+- meta;
+- assinatura;
+- parcela;
+- dívida;
+- insight.
+
+---
+
+# 41. ÁREA FAMILIAR
+
+Criar:
+
+“FynlyAx Family”
+
+Permitir:
+
+- convidar parceiro;
+- convidar familiares;
+- finanças individuais;
+- finanças compartilhadas;
+- despesas compartilhadas;
+- metas familiares.
+
+Permissões:
+
+Owner
+Admin
+Member
+Viewer.
+
+---
+
+# 42. PERFIL
+
+Página:
+
+/settings/profile
+
+Campos:
+
+- nome;
+- foto;
+- telefone;
+- moeda;
+- país;
+- idioma;
+- timezone.
+
+---
+
+# 43. SEGURANÇA
+
+Criar:
+
+- Row Level Security;
+- validações backend;
+- isolamento de dados;
+- proteção de APIs;
+- sanitização;
+- rate limiting quando necessário;
+- políticas de acesso;
+- sessão segura;
+- tratamento seguro de tokens;
+- proteção contra acesso indevido.
+
+Jamais permitir que um usuário veja dados financeiros de outro.
+
+---
+
+# 44. BANCO DE DADOS
+
+Criar schema para:
+
+users
+profiles
+subscriptions
+accounts
+transactions
+categories
+credit_cards
+credit_card_invoices
+installments
+budgets
+investments
+assets
+debts
+goals
+subscriptions_recurring
+notifications
+financial_insights
+family_groups
+family_members
+settings.
+
+Utilizar UUID.
+
+Toda informação financeira deve estar relacionada ao usuário ou workspace financeiro.
+
+---
+
+# 45. TRANSAÇÕES
+
+Criar tabela flexível.
+
+transaction:
+
+id
+user_id
+account_id
+category_id
+type
+description
+amount
+transaction_date
+status
+payment_method
+recurrence_id
+installment_id
+notes
+created_at
+updated_at.
+
+Tipos:
+
+income
+expense
+transfer
+investment
+debt_payment.
+
+---
+
+# 46. RECORRÊNCIA
+
+Criar mecanismo de:
+
+- mensal;
+- semanal;
+- quinzenal;
+- anual;
+- personalizado.
+
+Exemplo:
+
+Aluguel todo dia 5.
+
+Salário todo dia 30.
+
+---
+
+# 47. TRANSFERÊNCIAS
+
+Transferir dinheiro entre contas.
+
+Não contabilizar como despesa.
+
+Registrar:
+
+conta origem
+conta destino.
+
+---
+
+# 48. MODAL DE NOVA TRANSAÇÃO
+
+Criar botão global:
+
++ Nova transação.
+
+Modal rápido com:
+
+Receita
+Despesa
+Transferência
+Investimento.
+
+Atalhos rápidos.
+
+---
+
+# 49. SIDEBAR
+
+Criar menu:
+
+Visão Geral
+
+Finanças
+- Transações
+- Receitas
+- Despesas
+- Orçamento
+
+Contas
+- Contas
+- Cartões
+
+Patrimônio
+- Investimentos
+- Bens
+- Dívidas
+
+Planejamento
+- Metas
+- Calendário
+- Forecast
+
+Inteligência
+- Insights
+- FynlyAx Score
+- Money Map
+- Future
+- What If
+
+Relatórios
+
+Família
+
+Configurações.
+
+---
+
+# 50. EXPERIÊNCIA DO USUÁRIO
+
+A plataforma não deve parecer apenas um sistema de cadastro financeiro.
+
+Ela deve funcionar como um:
+
+“Painel de comando da vida financeira.”
+
+Em qualquer página, priorizar:
+
+- clareza;
+- contexto;
+- comparação;
+- evolução;
+- próximos passos.
+
+Sempre que possível responder:
+
+O que aconteceu?
+
+Por que aconteceu?
+
+O que pode acontecer?
+
+O que posso fazer?
+
+---
+
+# 51. DIFERENCIAL DA FYNLYAX
+
+Criar experiência baseada em cinco pilares:
+
+## CONTROL
+
+O que está acontecendo agora.
+
+## PLAN
+
+O que quero atingir.
+
+## PROTECT
+
+Riscos financeiros.
+
+## GROW
+
+Crescimento patrimonial.
+
+## PREDICT
+
+Projeção futura.
+
+Esses cinco pilares podem ser utilizados na UX e branding.
+
+---
+
+# 52. EMPTY STATES
+
+Criar empty states sofisticados.
+
+Exemplo investimentos:
+
+“Seu patrimônio começa com o primeiro investimento.”
+
+CTA:
+
+“Adicionar investimento”
+
+Nunca deixar tabelas vazias sem orientação.
+
+---
+
+# 53. DADOS DEMONSTRATIVOS
+
+Criar seed/demo account.
+
+Incluir:
+
+receitas;
+despesas;
+cartões;
+metas;
+investimentos;
+dívidas;
+gráficos.
+
+Isso deve permitir visualizar todo o potencial da plataforma.
+
+---
+
+# 54. MODO DEMONSTRAÇÃO
+
+Criar rota:
+
+/demo
+
+Permitindo apresentar a plataforma comercialmente sem criar conta.
+
+---
+
+# 55. PERFORMANCE
+
+Aplicar:
+
+- lazy loading;
+- queries otimizadas;
+- paginação;
+- cache quando apropriado;
+- skeletons;
+- otimização de componentes.
+
+---
+
+# 56. ACESSIBILIDADE
+
+Aplicar boas práticas:
+
+- contraste;
+- keyboard navigation;
+- aria labels;
+- focus states;
+- semântica HTML.
+
+---
+
+# 57. TEMA
+
+Criar:
+
+Dark Mode como principal.
+
+Preparar suporte ao Light Mode.
+
+---
+
+# 58. MICROINTERAÇÕES
+
+Criar animações discretas quando:
+
+- concluir meta;
+- adicionar receita;
+- aumentar patrimônio;
+- quitar dívida;
+- finalizar onboarding.
+
+Não exagerar.
+
+---
+
+# 59. ADMIN SAAS
+
+Criar painel separado:
+
+/admin
+
+Somente administrador da FynlyAx.
+
+Mostrar:
+
+- usuários;
+- assinaturas;
+- novos cadastros;
+- usuários ativos;
+- receita recorrente;
+- churn;
+- planos;
+- status de pagamento.
+
+Preparar:
+
+MRR
+ARR
+ARPU
+LTV.
+
+---
+
+# 60. FEATURE FLAGS
+
+Criar arquitetura que permita ativar funcionalidades por plano.
+
+Exemplo:
+
+can_use_investments
+
+can_use_family
+
+can_use_advanced_reports
+
+can_use_forecast
+
+can_use_insights.
+
+---
+
+# 61. LOGS E AUDITORIA
+
+Registrar eventos importantes:
+
+login
+alteração senha
+exclusão transação
+alteração conta
+convite familiar.
+
+---
+
+# 62. LGPD
+
+Criar estrutura preparada para:
+
+- política de privacidade;
+- termos;
+- exportação dos dados;
+- exclusão da conta;
+- consentimentos.
+
+---
+
+# 63. PWA
+
+Preparar plataforma para futuramente funcionar como PWA.
+
+---
+
+# 64. ARQUITETURA
+
+Separar projeto em módulos.
+
+Exemplo:
+
+/app
+/components
+/features
+/lib
+/services
+/hooks
+/types
+/utils
+/database.
+
+Features:
+
+auth
+dashboard
+transactions
+accounts
+cards
+investments
+debts
+goals
+reports
+insights
+family
+billing.
+
+---
+
+# 65. QUALIDADE DO CÓDIGO
+
+Obrigatório:
+
+- TypeScript;
+- tipagem forte;
+- componentes reutilizáveis;
+- evitar código duplicado;
+- documentação das funções críticas;
+- nomes claros;
+- separação de responsabilidades;
+- tratamento de erros;
+- validações.
+
+---
+
+# 66. DESENVOLVIMENTO POR FASES
+
+Não tente construir tudo de forma desorganizada.
+
+Desenvolver em fases.
+
+## Fase 1
+
+Criar:
+
+- arquitetura;
+- banco;
+- identidade;
+- design system;
+- autenticação;
+- onboarding;
+- layout;
+- sidebar.
+
+## Fase 2
+
+Criar:
+
+- contas;
+- categorias;
+- receitas;
+- despesas;
+- transações;
+- recorrências.
+
+## Fase 3
+
+Criar:
+
+- dashboard;
+- gráficos;
+- comparativos;
+- visão anual.
+
+## Fase 4
+
+Criar:
+
+- cartões;
+- faturas;
+- parcelas;
+- orçamento.
+
+## Fase 5
+
+Criar:
+
+- investimentos;
+- patrimônio;
+- dívidas.
+
+## Fase 6
+
+Criar:
+
+- metas;
+- Forecast;
+- What If;
+- Future;
+- Score.
+
+## Fase 7
+
+Criar:
+
+- relatórios;
+- insights;
+- família;
+- assinatura SaaS.
+
+## Fase 8
+
+Criar:
+
+- painel administrativo;
+- analytics;
+- otimizações;
+- segurança;
+- testes.
+
+---
+
+# 67. PRIMEIRA ENTREGA
+
+Antes de implementar tudo:
+
+1. Analise todos os requisitos.
+2. Proponha arquitetura.
+3. Crie estrutura do banco.
+4. Crie mapa de páginas.
+5. Crie estrutura dos módulos.
+6. Defina design system.
+7. Crie roadmap técnico.
+8. Só então comece a implementação.
+
+Não crie telas genéricas.
+
+Pense como uma equipe composta por:
+
+- Product Designer;
+- UX Designer;
+- UI Designer;
+- Engenheiro Frontend;
+- Engenheiro Backend;
+- Arquiteto SaaS;
+- Especialista em segurança;
+- Especialista financeiro;
+- Product Manager.
+
+---
+
+# 68. PRINCÍPIO VISUAL
+
+Cada dashboard deve possuir excelente hierarquia.
+
+Prioridade:
+
+1. informação crítica;
+2. tendências;
+3. comparação;
+4. gráficos;
+5. detalhamento.
+
+Não transformar a interface em uma coleção desorganizada de cards.
+
+---
+
+# 69. EXPERIÊNCIA PREMIUM
+
+Quero que o usuário entre na plataforma e tenha a sensação:
+
+“Finalmente consigo entender toda minha vida financeira.”
+
+A FynlyAx não deve ser apenas mais um controle de despesas.
+
+Ela deve ser percebida como:
+
+# Financial Operating System
+
+Um sistema operacional da vida financeira.
+
+---
+
+# 70. FRASE CENTRAL DA MARCA
+
+FynlyAx
+
+Controle. Planeje. Evolua.
+
+Alternativamente:
+
+“Seu dinheiro. Seu plano. Seu futuro.”
+
+---
+
+# RESULTADO ESPERADO
+
+Entregar uma plataforma SaaS extremamente bem construída, visualmente premium, escalável e comercialmente viável.
+
+Não priorize quantidade de funcionalidades sobre qualidade.
+
+Para cada módulo:
+
+- pense na experiência;
+- pense nos dados;
+- pense nos estados vazios;
+- pense nos erros;
+- pense no mobile;
+- pense em segurança;
+- pense em performance.
+
+Antes de criar qualquer componente pergunte internamente:
+
+“Isso parece uma plataforma financeira de R$30/mês ou uma plataforma premium que poderia cobrar R$100/mês?”
+
+Sempre escolher a segunda opção.
+
+Crie o produto com qualidade suficiente para ser vendido como SaaS profissional.
+
+Não copiar Pierre, Mobills, Organizze ou qualquer concorrente.
+
+Estudar os padrões de qualidade de fintechs modernas, mas construir uma interface, arquitetura, marca, funcionalidades e experiência próprias para a FynlyAx.
+
+Eu usaria esse como **prompt principal do projeto** e depois dividiria o desenvolvimento em prompts menores por módulo. Isso reduz muito a chance de o Codex gerar um sistema visualmente bonito, mas com arquitetura bagunçada ou funcionalidades incompletas.

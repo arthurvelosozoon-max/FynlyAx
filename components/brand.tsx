@@ -1,0 +1,1 @@
+export function Brand(){return <a href="/" className="brand" aria-label="FynlyAx"><span className="brand-symbol"><img src="/logo.png" alt=""/></span><span>Fynly<span className="accent-text">Ax</span></span></a>}
