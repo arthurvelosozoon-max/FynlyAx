@@ -26,7 +26,7 @@ test('PostgreSQL migration: RLS isolation, atomic revisions and validated writes
   assert.equal((await save(0)).rows[0].revision,1);assert.equal((await db.query('select * from public.fynlyax_user_state')).rows.length,1);
   const invalid=emptyState();invalid.transactions.push({id:'t',description:'Bad account',amount:1,date:'2026-09-13',account:'missing',category:'food',type:'expense',status:'paid'});
   await assert.rejects(save(1,invalid),(e:unknown)=>(e as {code:string}).code==='22023');
-  const custom=emptyState();custom.customCategories=[{id:'pets',name:'Pets'}];custom.cards=[{id:'c',name:'Card',limit:10000,closingDay:22,dueDay:29}];custom.cardCharges=[{id:'charge',cardId:'c',description:'Vet',category:'pets',amount:100,date:'2026-09-29'}];custom.monthlyLimits={'2026-09':{pets:1000}};
+  const custom=emptyState();custom.customCategories=[{id:'pets',name:'Pets'}];custom.accounts=[{id:'bank',name:'Bank',institution:'Fynly Bank',type:'checking',opening:0,currency:'BRL',color:'#ffffff'}];custom.transactions=[{id:'rent',seriesId:'rent',description:'Rent',amount:100,date:'2026-09-10',account:'bank',category:'home',subcategory:'Housing',tags:['family'],notes:'Contract',recurrence:'monthly',type:'expense',status:'pending'}];custom.cards=[{id:'c',name:'Card',limit:10000,closingDay:22,dueDay:29,color:'#7c3aed'}];custom.cardCharges=[{id:'charge',seriesId:'purchase',cardId:'c',description:'Vet',category:'pets',amount:100,date:'2026-09-29',notes:'Receipt'}];custom.monthlyLimits={'2026-09':{pets:1000}};
   assert.equal((await save(1,custom)).rows[0].revision,2);
   custom.cardCharges[0].cardId='missing';await assert.rejects(save(2,custom),(e:unknown)=>(e as {code:string}).code==='22023');
   assert.equal((await db.query<{ok:boolean}>('select public.fynlyax_take_ai_slot() as ok')).rows[0].ok,true);
@@ -36,3 +36,4 @@ test('PostgreSQL migration: RLS isolation, atomic revisions and validated writes
   await db.exec('reset role;set role anon;');await assert.rejects(save(0),(e:unknown)=>(e as {code:string}).code==='42501');
  }finally{await db.close();}
 });
+

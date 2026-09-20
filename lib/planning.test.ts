@@ -39,3 +39,5 @@ test('schema rejects unknown cards, invalid payment amounts and category referen
  assert.equal(stateSchema.safeParse(paid).success,false);
  s.customCategories=[];assert.equal(stateSchema.safeParse(s).success,false);
 });
+test('editable account, transaction and card metadata remain valid',()=>{const s=emptyState();s.accounts=[{id:'bank',name:'Bank',institution:'Fynly Bank',type:'checking',opening:0,currency:'BRL',color:'#ffffff'}];s.cards=[{...card,color:'#7c3aed'}];s.transactions=[{id:'rent',seriesId:'rent',description:'Rent',amount:1000,date:'2026-09-01',account:'bank',type:'expense',status:'pending',category:'home',subcategory:'Housing',tags:['family'],notes:'Monthly contract',recurrence:'monthly'}];s.cardCharges=[{...purchaseSchedule(card,'2026-09-01',300,1,'food','Buy','p')[0],notes:'Receipt saved'}];assert.equal(stateSchema.safeParse(s).success,true);});
+
