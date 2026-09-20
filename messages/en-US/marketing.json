@@ -14,12 +14,12 @@
   "tagline": "Control. Plan. Evolve.",
   "product": "The platform",
   "back": "Back to website",
-  "demoNotice": "Explore the first release with demo data. Registration and subscriptions are not yet available.",
+  "demoNotice": "Explore with demo data or create an account to sync your finances.",
   "plans": "Plans in preparation",
   "freeBody": "Essential organization",
   "premiumBody": "Planning and net worth",
   "familyBody": "Shared finances",
   "planNote": "Subscriptions and pricing will be available after billing integration.",
   "future": "More possibilities ahead",
-  "futureBody": "Investments, cards, debts and family are on the technical roadmap."
+  "futureBody": "Investments, debt, simulators and family are on the technical roadmap."
 }
