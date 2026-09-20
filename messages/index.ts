@@ -1,3 +1,6 @@
+import ptPlanning from './pt-BR/planning.json';
+import enPlanning from './en-US/planning.json';
+import esPlanning from './es-ES/planning.json';
 import ptAuth from './pt-BR/auth.json';
 import enAuth from './en-US/auth.json';
 import esAuth from './es-ES/auth.json';
@@ -14,5 +17,5 @@ import l2dashboard from './es-ES/dashboard.json';
 import l2marketing from './es-ES/marketing.json';
 import l2settings from './es-ES/settings.json';
 export type Locale='pt-BR'|'en-US'|'es-ES';
-export const messages={'pt-BR':{...ptAuth,...l0common,...l0dashboard,...l0marketing,...l0settings},'en-US':{...enAuth,...l1common,...l1dashboard,...l1marketing,...l1settings},'es-ES':{...esAuth,...l2common,...l2dashboard,...l2marketing,...l2settings}};
+export const messages={'pt-BR':{...ptPlanning,...ptAuth,...l0common,...l0dashboard,...l0marketing,...l0settings},'en-US':{...enPlanning,...enAuth,...l1common,...l1dashboard,...l1marketing,...l1settings},'es-ES':{...esPlanning,...esAuth,...l2common,...l2dashboard,...l2marketing,...l2settings}};
 export type MessageKey=keyof typeof messages['pt-BR'];

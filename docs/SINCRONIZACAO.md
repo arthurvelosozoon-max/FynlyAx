@@ -33,3 +33,13 @@ Projeto conectado: FynlyAx (`vjvpjjbphaomielprzet`), organização Fynly Finanç
 ## Testes
 
 `npm test` executa cálculos financeiros, fila de gravação, conflitos entre dispositivos, consultas atrasadas, retenção de alterações após falha e troca de conta. O teste de migração usa PostgreSQL em memória (PGlite), com papéis equivalentes e `auth.uid()` simulado, para conferir RLS, permissões, validação e rejeição de versões antigas. Isso não substitui a verificação de login e cookies na instância Supabase escolhida.
+
+## Recuperação de senha na Netlify
+
+O login inclui Recuperar senha. `/forgot-password` solicita o e-mail pelo Supabase; `/auth/callback?next=reset-password` troca o código PKCE por uma sessão e encaminha para `/reset-password`. Abra o link no mesmo navegador em que fez a solicitação. Links inválidos encaminham para uma nova solicitação.
+
+A nova senha exige 12 a 128 caracteres e confirmação idêntica. A API valida origem e sessão antes de atualizar a senha. Após sucesso, encerra a sessão local e orienta novo login. A resposta à solicitação não revela se uma conta existe.
+
+Site URL configurada no Supabase: https://fynlyax.netlify.app. Retornos autorizados: https://fynlyax.netlify.app/auth/callback e https://fynlyax.netlify.app/auth/callback?next=reset-password.
+
+A entrega real de e-mails depende do serviço de e-mail do Supabase e seus limites. Testes com uma caixa de e-mail e alteração de senha real devem ser concluídos pelo titular da conta.

@@ -33,5 +33,6 @@ export function useFinancialState(mode:'demo'|'cloud'){
  const retry=()=>snapshot.dirty?engine.current?.save():engine.current?.load();
  const loadLatest=()=>engine.current?.load(true);
  const exportPending=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(snapshot.state,null,2)],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='fynlyax-pending.json';link.click();URL.revokeObjectURL(url);};
- return {...snapshot,setField,retry,loadLatest,exportPending};
+ const setState=(change:(state:FinancialState)=>FinancialState)=>{if(mode==='cloud')engine.current?.change(change);else setSnapshot(s=>({...s,state:change(s.state)}));};
+ return {...snapshot,setField,setState,retry,loadLatest,exportPending};
 }
